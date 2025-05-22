@@ -1,12 +1,6 @@
 'use client';
-import { useState } from 'react';
-import { ChevronDownIcon } from '@heroicons/react/16/solid';
-import { Field, Label, Switch } from '@headlessui/react';
-import { aleo, kleeOne } from '@/app/fonts';
 
 function page() {
-  const [agreed, setAgreed] = useState(false);
-
   return (
     <div className="">
       <div className="mx-auto max-w-2xl text-center">
@@ -131,7 +125,7 @@ function page() {
             type="submit"
             className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
-            Let's talk
+            Let&apos;s talk
           </button>
         </div>
       </form>

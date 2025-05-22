@@ -72,15 +72,15 @@ function Page() {
         <div className="lg:w-1/2 align-middle">
           <h1 className="text-2xl pb-5 font-bold">About Me</h1>
           <p className="justify-center lg:pr-10 text-gray-700">
-            I’m a Mechanical Engineer with real-world experience in fire
+            I&apos;m a Mechanical Engineer with real-world experience in fire
             protection systems, automation, preventive maintenance, and
-            engineering design. I’ve always loved planning, designing, and
-            solving problems — and now I’m applying that mindset to a new field:
-            full-stack web development. <br /> <br />
-            Web development excites me because it's another way to bring ideas
-            to life. After exploring the world of mechanical engineering, I’m
-            ready to explore a new path — one that involves building useful,
-            scalable, and impactful software.
+            engineering design. I&apos;ve always loved planning, designing, and
+            solving problems — and now I&apos;m applying that mindset to a new
+            field: full-stack web development. <br /> <br />
+            Web development excites me because it&apos;s another way to bring
+            ideas to life. After exploring the world of mechanical engineering,
+            I&apos;m ready to explore a new path — one that involves building
+            useful, scalable, and impactful software.
           </p>
         </div>
 
@@ -98,7 +98,7 @@ function Page() {
       <div className="lg:w-1/2 align-middle">
         <h1 className="text-2xl pb-5 font-bold">My Goals</h1>
         <p className="justify-center lg:pr-10 text-gray-700 pb-3">
-          In the short term, I’m seeking opportunities as a Junior Web Developer
+          In the short term, I&apos;m seeking opportunities as a Junior Web Developer
           to grow through hands-on experience. In the long run, I aim to:
         </p>
         <ul className="list-disc pl-5 text-gray-700">
@@ -115,7 +115,7 @@ function Page() {
         <h1 className="text-2xl pb-5 font-bold">Outside of Tech</h1>
         <p className="justify-center lg:pr-10 text-gray-700">
           I bring a problem-solving mindset shaped by real engineering
-          challenges. Whether it's troubleshooting a machine or designing a
+          challenges. Whether it&apos;s troubleshooting a machine or designing a
           database schema, I love the process of turning complexity into
           clarity.
         </p>
@@ -134,7 +134,7 @@ function Page() {
         <h1 className="text-2xl pb-5 font-bold">Site in Progress</h1>
         <p className="justify-center lg:pr-10 text-gray-700">
           This portfolio is actively evolving, just like my journey. Stay tuned
-          — I’ll be sharing my projects, experiments, and learning milestones
+          — I&apos;ll be sharing my projects, experiments, and learning milestones
           here.
         </p>
       </div>
