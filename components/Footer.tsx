@@ -10,10 +10,13 @@ function Footer() {
           &copy; {new Date().getFullYear()} Renzo. Built with ❤️ using Next.js |
         </p>
         <div className="flex flex-row gap-1">
-          <Link href="https://github.com/rnzmndz">
+          <Link href="https://github.com/rnzmndz" target="_blank">
             <Icon icon="skill-icons:github-dark" className="h-8 w-auto" />
           </Link>
-          <Link href="https://www.linkedin.com/in/renzocmendoza/">
+          <Link
+            href="https://www.linkedin.com/in/renzocmendoza/"
+            target="_blank"
+          >
             <Icon icon="skill-icons:linkedin" className="h-8 w-auto" />
           </Link>
         </div>
