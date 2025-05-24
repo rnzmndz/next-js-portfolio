@@ -1,7 +1,5 @@
 'use client';
 
-import { Metadata } from 'next';
-
 function page() {
   return (
     <div className="">
