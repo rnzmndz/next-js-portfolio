@@ -3,13 +3,40 @@ import { aleo, kleeOne } from '@/app/fonts';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
+type NavbarOptions = {
+  reference: string;
+  title: string;
+};
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const linkStyles = 'transition-colors duration-200';
-
   const hoverStyles = 'hover:font-extrabold hover:underline';
   const activeStyles = 'active:text-gray-600 active:font-bold';
+
+  const navbarOptions: NavbarOptions[] = [
+    { reference: '/about', title: 'About' },
+    { reference: '/services', title: 'Services' },
+    { reference: '/portfolio', title: 'Portfolio' },
+    { reference: '/contact', title: 'Contact' },
+  ];
+
+  function NavbarSection({ options }: { options: NavbarOptions[] }) {
+    return (
+      <>
+        {options.map((option, index) => (
+          <Link
+            key={index}
+            href={option.reference}
+            className={`${linkStyles} ${hoverStyles} ${activeStyles}`}
+          >
+            {option.title}
+          </Link>
+        ))}
+      </>
+    );
+  }
 
   return (
     <header className='pt-5 lg:pt-20'>
@@ -65,59 +92,13 @@ function Navbar() {
         </div>
 
         <div className={`hidden lg:flex gap-10 ${kleeOne.className}`}>
-          <Link
-            href='/about'
-            className={`${linkStyles} ${hoverStyles} ${activeStyles}`}
-          >
-            About
-          </Link>
-          <Link
-            href='/services'
-            className={`${linkStyles} ${hoverStyles} ${activeStyles}`}
-          >
-            Services
-          </Link>
-          <Link
-            href='/portfolio'
-            className={`${linkStyles} ${hoverStyles} ${activeStyles}`}
-          >
-            Portfolio
-          </Link>
-          <Link
-            href='/contact'
-            className={`${linkStyles} ${hoverStyles} ${activeStyles}`}
-          >
-            Contact
-          </Link>
+          <NavbarSection options={navbarOptions} />
         </div>
         {isOpen && (
           <div
             className={`lg:hidden absolute top-full left-0 right-0 mt-4 space-x-5 space-y-3 text-center ${kleeOne.className} bg-white p-4 shadow-md`}
           >
-            <Link
-              href='/about'
-              className={`${linkStyles} ${hoverStyles} ${activeStyles}`}
-            >
-              About
-            </Link>
-            <Link
-              href='/services'
-              className={`${linkStyles} ${hoverStyles} ${activeStyles}`}
-            >
-              Services
-            </Link>
-            <Link
-              href='/portfolio'
-              className={`${linkStyles} ${hoverStyles} ${activeStyles}`}
-            >
-              Portfolio
-            </Link>
-            <Link
-              href='/contact'
-              className={`${linkStyles} ${hoverStyles} ${activeStyles}`}
-            >
-              Contact
-            </Link>
+            <NavbarSection options={navbarOptions} />
           </div>
         )}
       </nav>
