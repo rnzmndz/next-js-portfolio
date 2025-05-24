@@ -1,8 +1,13 @@
+import { Metadata } from 'next';
 import React from 'react';
 
 type Service = {
   title: string;
   description: string;
+};
+
+export const metadata: Metadata = {
+  title: 'Services',
 };
 
 const engineeringServices: Service[] = [
@@ -54,18 +59,18 @@ function ServicesSection({
   title: string;
 }) {
   return (
-    <div className='flex flex-col items-center'>
-      <h1 className='text-2xl font-bold pb-5'>{title}</h1>
-      <div className='flex flex-row gap-5 items-center justify-center flex-wrap'>
+    <div className="flex flex-col items-center">
+      <h1 className="text-2xl font-bold pb-5">{title}</h1>
+      <div className="flex flex-row gap-5 items-center justify-center flex-wrap">
         {serviceList.map((service, index) => (
           <div
-            className='p-6 w-64 min-h-[200px] bg-gray-200 rounded-2xl text-center shadow-xl'
+            className="p-6 w-64 min-h-[200px] border border-gray-200 rounded-2xl text-center shadow-xl"
             key={index}
           >
-            <h1 className='h-20 font-bold flex justify-center items-center'>
+            <h1 className="h-20 font-bold flex justify-center items-center">
               {service.title}
             </h1>
-            <p className=''>{service.description}</p>
+            <p className="">{service.description}</p>
           </div>
         ))}
       </div>
@@ -75,13 +80,13 @@ function ServicesSection({
 
 function Page() {
   return (
-    <div className='flex flex-col gap-10 pb-20'>
+    <div className="flex flex-col gap-10 pb-20">
       <ServicesSection
-        title='Engineering Services'
+        title="Engineering Services"
         serviceList={engineeringServices}
       />
       <ServicesSection
-        title='Web Development Services'
+        title="Web Development Services"
         serviceList={webDevelopmentServices}
       />
     </div>

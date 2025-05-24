@@ -4,7 +4,7 @@ import React from 'react';
 
 function Home() {
   return (
-    <div className='flex flex-col-reverse items-center justify-center lg:flex-row w-full '>
+    <div className='flex flex-col-reverse items-center justify-center lg:flex-row w-full px-5'>
       <div className='flex gap-10 flex-col pt-10 lg:items-start'>
         <h1 className='text-2xl text-gray-800'>Welcome to My Portfolio!</h1>
         <h3 className='text-4xl'>I&apos;M RENZO,</h3>

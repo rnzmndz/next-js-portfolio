@@ -3,7 +3,10 @@ import './globals.css';
 import { aleo, kleeOne } from './fonts';
 
 export const metadata: Metadata = {
-  title: 'I am Renzo',
+  title: {
+    template: 'Mendoza | %s',
+    default: 'Mendoza',
+  },
   description: 'This is my personal portfolio',
 };
 

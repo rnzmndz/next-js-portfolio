@@ -1,9 +1,14 @@
 import { Icon } from '@iconify/react/dist/iconify.js';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import React from 'react';
 
 type IconItem = {
   icon: string;
+};
+
+export const metadata: Metadata = {
+  title: 'About',
 };
 
 const languageIcons: IconItem[] = [
@@ -98,8 +103,9 @@ function Page() {
       <div className="lg:w-1/2 align-middle">
         <h1 className="text-2xl pb-5 font-bold">My Goals</h1>
         <p className="justify-center lg:pr-10 text-gray-700 pb-3">
-          In the short term, I&apos;m seeking opportunities as a Junior Web Developer
-          to grow through hands-on experience. In the long run, I aim to:
+          In the short term, I&apos;m seeking opportunities as a Junior Web
+          Developer to grow through hands-on experience. In the long run, I aim
+          to:
         </p>
         <ul className="list-disc pl-5 text-gray-700">
           <li>Build ERP systems and business tools</li>
@@ -134,8 +140,8 @@ function Page() {
         <h1 className="text-2xl pb-5 font-bold">Site in Progress</h1>
         <p className="justify-center lg:pr-10 text-gray-700">
           This portfolio is actively evolving, just like my journey. Stay tuned
-          — I&apos;ll be sharing my projects, experiments, and learning milestones
-          here.
+          — I&apos;ll be sharing my projects, experiments, and learning
+          milestones here.
         </p>
       </div>
     </div>
